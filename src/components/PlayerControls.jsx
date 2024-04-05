@@ -72,21 +72,21 @@ export default function PlayerControls() {
     return (
     <Container>
         <div className="shuffle">
-        <BsShuffle />
+          <BsShuffle />
         </div>
         <div className="previous">
-        <CgPlayTrackPrev onClick={() => changeTrack("previous")} />
+          <CgPlayTrackPrev onClick={() => changeTrack("previous")} />
         </div>
         <div className="state">
-        {
-            playerState ? <BsFillPauseCircleFill onClick={() => changeState("pause")}/> : <BsFillPlayCircleFill onClick={() => changeState("play")}/>
-        }
+          {
+              playerState ? <BsFillPauseCircleFill onClick={() => changeState("pause")}/> : <BsFillPlayCircleFill onClick={() => changeState("play")}/>
+          }
         </div>
         <div className="next">
-        <CgPlayTrackNext onClick={() => changeTrack("next")} />
+          <CgPlayTrackNext onClick={() => changeTrack("next")} />
         </div>
         <div className="repeat">
-        <FiRepeat />
+          <FiRepeat />
         </div>
     </Container>
     )
